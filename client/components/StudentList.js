@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const DUMMY_DATA = [
   {
@@ -15,14 +15,14 @@ const DUMMY_DATA = [
     firstName: "Dan",
     lastName: "Avramov",
     email: "da@react.com",
-  }
-]
+  },
+];
 
 class StudentList extends React.Component {
   constructor(props) {
     super(props);
   }
-
+  //do we import info from store here?
   render() {
     return (
       <ul>
@@ -35,9 +35,10 @@ class StudentList extends React.Component {
           </li>
         ))}
       </ul>
-    )
-
+    );
   }
 }
+
+export connect(null,null)(students)
 
 export default StudentList;
